@@ -10,8 +10,14 @@
         <input type="text" ng-model="name"><br> <!--We have added the ng-model directive for View-toController binding, this creates a property on $scope whose key is what ng-model is set to ** ng-model is only used for input elements-->
         <div ng-bind="name"></div>
         <button ng-click='alertMe()'> Alert Me</button>
+        <div ng-show="willShow"> Angular is showing this! </div><br>
+        <button ng-click="toggleShow()">Toggle</button><br>
+        <div ng-hide="willShow">Angular is hiding this</div>
         <script src="main.js"></script>
     </body>
 </html>
 
-<!--ng-click = This directive is Angular's way of handling click events, the function should be defined as the propertyof the $scope object -->
+<!--ng-click = This directive is Angular's way of handling click events, the function should be defined as the propertyof the $scope object
+    ng-show = the directive is Angular's way of hiding or showing content, 
+    ng-hide = It is the exact opposite of ng-hide directive; 
+-->

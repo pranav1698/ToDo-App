@@ -5,6 +5,12 @@ angular.module('toDoApp', []) /* created a angular module with name toDoApp, the
         $scope.alertMe = () => {
             alert('Alert Me');
         }
+
+        $scope.willShow = true;
+
+        $scope.toggleShow = () => {
+            $scope.willShow = !$scope.willShow;
+        } 
     }]);
 
 /**Services in Angular are objects used as tools, they start with a $ and inject them to a controller, It is used to store data within the controller and can be automatically accesed in the View
